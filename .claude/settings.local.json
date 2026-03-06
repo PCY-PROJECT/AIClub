@@ -21,7 +21,8 @@
       "Bash(redis-cli ping:*)",
       "Bash(lsof:*)",
       "Bash(./mvnw package:*)",
-      "Bash(mysql:*)"
+      "Bash(mysql:*)",
+      "Bash(mysqldump:*)"
     ]
   }
 }

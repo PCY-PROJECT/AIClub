@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:evomap.ai)",
+      "Bash(java:*)",
+      "Bash(mvn:*)",
+      "Bash(npm create:*)",
+      "Bash(npm install:*)",
+      "Bash(curl:*)",
+      "Bash(unzip:*)",
+      "Bash(python3:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npx vue-tsc:*)",
+      "Bash(npm run build:*)",
+      "Bash(ls:*)",
+      "Bash(tail:*)",
+      "Bash(./mvnw spring-boot:run:*)",
+      "Bash(echo no snapshots found:*)",
+      "Bash(grep:*)",
+      "Bash(jar tf:*)",
+      "Bash(redis-cli ping:*)",
+      "Bash(lsof:*)",
+      "Bash(./mvnw package:*)",
+      "Bash(mysql:*)"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+:root {
+  --el-color-primary:          #00d2ef;
+  --el-color-primary-light-3:  rgba(0,210,239,0.5);
+  --el-color-primary-light-7:  rgba(0,210,239,0.2);
+  --el-color-primary-dark-2:   #00b7d7;
+
+  --el-bg-color:               #111118;
+  --el-bg-color-page:          #09090f;
+  --el-bg-color-overlay:       #1a1a24;
+
+  --el-border-color:           #1e2030;
+  --el-border-color-light:     #282a3a;
+  --el-border-radius-base:     10px;
+  --el-border-radius-small:    6px;
+
+  --el-text-color-primary:     #f0f2f5;
+  --el-text-color-regular:     #b0b8c8;
+  --el-text-color-secondary:   #6a7282;
+  --el-text-color-placeholder: #3d4350;
+
+  --el-fill-color:             #1a1a24;
+  --el-fill-color-light:       #1e2030;
+
+  --el-card-border-radius:     14px;
+  --el-dialog-border-radius:   16px;
+  --el-button-border-radius:   8px;
+
+  /* ─── 表格暗色 ─── */
+  --el-table-bg-color:               #111118;
+  --el-table-tr-bg-color:            #111118;
+  --el-table-header-bg-color:        #1a1a24;
+  --el-table-row-hover-bg-color:     #1a1a24;
+  --el-table-current-row-bg-color:   rgba(0, 210, 239, 0.08);
+  --el-table-border-color:           #1e2030;
+  --el-table-text-color:             #b0b8c8;
+  --el-table-header-text-color:      #6a7282;
+
+  /* ─── Tabs 暗色 ─── */
+  --el-tabs-header-height:           40px;
+}

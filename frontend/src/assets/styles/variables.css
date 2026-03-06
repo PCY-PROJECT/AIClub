@@ -1,0 +1,36 @@
+:root {
+  /* ─── 背景层级 ─── */
+  --color-bg-base:     #09090f;
+  --color-bg-elevated: #111118;
+  --color-bg-overlay:  #1a1a24;
+
+  /* ─── 主色：Cyan ─── */
+  --color-primary:      #00d2ef;
+  --color-primary-dim:  rgba(0, 210, 239, 0.15);
+  --color-primary-glow: rgba(0, 210, 239, 0.3);
+
+  /* ─── 文字 ─── */
+  --color-text-primary:  #f0f2f5;
+  --color-text-muted:    #6a7282;
+  --color-text-disabled: #3d4350;
+
+  /* ─── 边框 ─── */
+  --color-border:       #1e2030;
+  --color-border-hover: rgba(0, 210, 239, 0.4);
+
+  /* ─── 状态色 ─── */
+  --color-success: #00c758;
+  --color-warning: #f99c00;
+  --color-error:   #ff6568;
+
+  /* ─── 圆角 ─── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  /* ─── 阴影 ─── */
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.4), 0 0 0 1px var(--color-border);
+  --shadow-card-hover: 0 4px 20px rgba(0,0,0,0.5), 0 0 0 1px var(--color-border-hover);
+  --shadow-glow: 0 0 16px var(--color-primary-glow);
+}

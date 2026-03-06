@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@400;500;600&display=swap');
+
+:root {
+  --font-display: 'Orbitron', system-ui, sans-serif;
+  --font-body:    'Rajdhani', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, monospace;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background-color: var(--color-bg-base);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg-base); }
+::-webkit-scrollbar-thumb { background: var(--color-border-hover); border-radius: 3px; }
+
+/* 背景光晕 */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%,
+      rgba(0, 210, 239, 0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 40% at 100% 100%,
+      rgba(0, 186, 167, 0.04) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+a { color: var(--color-primary); text-decoration: none; }
+a:hover { color: #00b7d7; }
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* 卡片通用样式 */
+.app-card {
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.app-card:hover {
+  border-color: var(--color-border-hover);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+}
+
+/* 邀请码展示框 */
+.code-display {
+  font-family: var(--font-mono);
+  background: rgba(0, 210, 239, 0.08);
+  border: 1px solid rgba(0, 210, 239, 0.25);
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  color: var(--color-primary);
+  letter-spacing: 0.08em;
+  font-size: 14px;
+}
+
+/* 积分徽章 */
+.points-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(0, 210, 239, 0.12);
+  color: var(--color-primary);
+  border-radius: var(--radius-sm);
+  padding: 3px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--font-display);
+}
+
+/* 分类标签 */
+.category-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 500;
+  background: rgba(0, 210, 239, 0.08);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+}
